@@ -54,7 +54,14 @@ body {
     text-align:center;
     background: linear-gradient(60deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%);
     color:white;
+    text-shadow: 6px 6px 10px rgba(0,0,0,0.4);
 }
+
+.header p{
+    font-size: 100px;
+}
+
+
 .logo {
     width:50px;
     fill:white;
@@ -62,9 +69,9 @@ body {
     display:inline-block;
     vertical-align: middle;
 }
-  
+
 .inner-header {
-    height:40vh;
+    height:20vh;
     width:100%;
     margin: 0;
     padding: 0;
@@ -80,15 +87,15 @@ body {
 .waves-header {
     position:relative;
     width: 100%;
-    height:15vh;
+    height: 10vh;
     margin-bottom:-7px; /*Fix for safari gap*/
-    min-height:100px;
-    max-height:150px;
+    min-height:30px;
+    max-height:30px;
 }
   
 .content {
     position:relative;
-    height:20vh;
+    height:5vh;
     text-align:center;
     background-color: white;
 }
@@ -142,7 +149,8 @@ body {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: flex-start;
-    margin-bottom: 15%;
+    margin-bottom: 10vh;
+    margin: 65px 0px 75px 0px;
 }
   
 .left-section article {
@@ -150,32 +158,35 @@ body {
     background-color: rgb(255, 255, 255);
     border: 2px solid rgba(0,0,0,0.6);
     border-radius: 10px;
-    box-shadow: 6px 2px 4px rgba(0,0,0,0.4);
+    box-shadow: 6px 6px 10px rgba(0,0,0,0.4);
     width: 300px;
     height: 350px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    margin-top: 30px;
     text-align: center;
-}
-  
-.left-section article h4:hover {
-    text-decoration: underline;
-    cursor: pointer;
+    transition: 0.5s;
+    color: #333333;
 }
 
-.left-section article h4 {
+.left-section article:hover{
+    background-color: rgba(0, 0, 0, 0.575);
+    transform: translateY(-10px);
+    transform: scale(1.1);
+    color: white;
+}
+
+.left-section article h4{
     margin: 0px;
-    color: #333333;
 }
 
 .left-section article p {
     margin: 0px;
     line-height: 25px;
     font-size: 100%;
-    color: #333333;
     margin: 10px;
 }
   
@@ -184,6 +195,7 @@ body {
     margin-right: 5px;
     padding: 5px;
     font-size: 14px;
+    color: #333333;
 }
   
 .left-section img {
@@ -195,26 +207,26 @@ body {
 .image{
     border-radius: 8px;
     text-align: center;
-    background: linear-gradient(60deg, rgb(107, 107, 107) 0%, rgb(138, 139, 139) 100%);
+    background: linear-gradient(60deg, rgb(124, 179, 189) 0%, rgb(103, 109, 170) 100%);
     width: 100%;
     height: 130px;
 }
 
 a{
     text-decoration: none;
-    color: black;
 }
 
 .footer {
     position: relative;
     width: 100%;
     background: linear-gradient(60deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%);
-    min-height: 100px;
-    padding: 20px 50px;
+    min-height: 50px;
+    padding: 10px 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    text-shadow: 6px 6px 10px rgba(0,0,0,0.4);
 }
   
 .social-icon,
@@ -223,8 +235,9 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 10px 0;
+    margin: 0;
     flex-wrap: wrap;
+      
 }
   
 .social-icon__item,
@@ -243,6 +256,7 @@ a{
     transform: translateY(-10px);
 }
   
+/*
 .menu__link {
     font-size: 1.2rem;
     color: #fff;
@@ -253,14 +267,31 @@ a{
     opacity: 0.75;
     font-weight: 300;
 }
-  
+
 .menu__link:hover {
     opacity: 1;
 }
-  
+*/
+
+.footer .perfil_linkedin{
+    font-size: 1.2rem;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+    text-decoration: none;
+    opacity: 0.75;
+    font-weight: 300;
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+
+.footer .perfil_linkedin:hover {
+    opacity: 1;
+}
 .footer p {
     color: #fff;
-    margin: 15px 0 10px 0;
+    margin: 10px 0 0 0;
     font-size: 1rem;
     font-weight: 300;
 }
@@ -293,6 +324,5 @@ p {
     font-family: 'Lato', sans-serif;
     letter-spacing: 1px;
     font-size:14px;
-    color: #333333;
 }
     
